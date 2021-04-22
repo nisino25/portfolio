@@ -16,12 +16,13 @@
         <h2>これまでの人生のタイムライン</h2>
       </div>
 
-      <nav>
+      <nav class="menu-container">
         <ul>
-          <li @click="showingList = 'life'" :class="[showingList === 'life' ? 'timeline-header-active' : 'timeline-header-deactive']"><a href="#">私の人生</a></li>
-          <li @click="showingList = 'both'" :class="[showingList === 'both' ? 'timeline-header-active' : 'timeline-header-deactive']"><a href="#">全て</a></li>
-          <li @click="showingList = 'programming'" :class="[showingList === 'programming' ? 'timeline-header-active' : 'timeline-header-deactive']"><a href="#">プログラミング</a></li>
+          <li @click="showingList = 'life'" :class="[showingList === 'life' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-left"><a href="#">私の人生</a></li>
+          <li @click="showingList = 'both'" :class="[showingList === 'both' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-center"><a href="#">全て</a></li>
+          <li @click="showingList = 'programming'" :class="[showingList === 'programming' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-right"><a href="#">プログラミング</a></li>
         </ul>
+
         <span class="line"></span>
 
       </nav>
@@ -30,74 +31,66 @@
 
       
     </div>
+    
 
-    <div class="timeline">
-    <div class="container left">
-      <div class="date">15 Dec</div>
-      <i class="icon fa fa-home"></i>
-      <div class="content">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-        </p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="date">22 Oct</div>
-      <i class="icon fa fa-gift"></i>
-      <div class="content">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-        </p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="date">10 Jul</div>
-      <i class="icon fa fa-user"></i>
-      <div class="content">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-        </p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="date">18 May</div>
-      <i class="icon fa fa-running"></i>
-      <div class="content">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-        </p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="date">10 Feb</div>
-      <i class="icon fa fa-cog"></i>
-      <div class="content">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-        </p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="date">01 Jan</div>
-      <i class="icon fa fa-certificate"></i>
-      <div class="content">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-        </p>
-      </div>
-    </div>
+    <div class="timeline" v-if="showingList === 'both'">
 
+      <div  v-for="(event, i) in EventList.Everything " :key="i">
+        <div :class="[event.personal? 'left' : 'right']" class="container">
+          <div class="date">{{event.year}}年{{event.month}}月</div>
+          <i class="icon fa fa-home"></i>
+          <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
+            <h2>{{event.description}}</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
+      </div>
 
     </div>
+
+    <div class="timeline" v-if="showingList === 'life'">
+
+      <div  v-for="(event, i) in EventList.Everything " :key="i">
+        <div :class="[event.personal? 'left' : 'right']" class="container" v-if="event.personal">
+          <div class="date">{{event.year}}年{{event.month}}月</div>
+          <i class="icon fa fa-home"></i>
+          <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
+            <h2>{{event.description}}</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="timeline" v-if="showingList === 'programming'">
+
+      <div  v-for="(event, i) in EventList.Everything " :key="i">
+        <div :class="[event.personal? 'left' : 'right']" class="container" v-if="!event.personal">
+          <div class="date">{{event.year}}年{{event.month}}月</div>
+          <i class="icon fa fa-home"></i>
+          <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
+            <h2>{{event.description}}</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+   
 
 
   </div>
+
+
+  <!-- </div> -->
 
  
   
@@ -219,40 +212,57 @@ export default {
 
 
   .timeline-header nav{
-    /* display: block; */
-    padding-bottom: 12px;
-    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    
+  }
+
+  .menu-container{
+    width:35%;
+    /* background-color: red; */
+    margin: 0 auto;
+    font-size: 120%;
+
+  }
+
+  .menu-left{
+    float: left;
+    width: 100px;
+  }
+
+  .menu-right{
+    float: right;
+    width: 100px;
+  }
+
+  .menu-center{
+    margin: 0 auto;
+    width: 100px;
   }
 
   .timeline-header nav ul{
-    text-align: center;
+    
     display: block;
-    margin: 0 auto;
     width: auto;
     margin: auto;
-    margin-left: 39%; 
-    margin-right: 39%; 
     padding: 0;
     list-style: none;
     display: flex;
   }
 
   .timeline-header-deactive{
-    margin: 0 40px 0 0;
     opacity: .35;
     transition: all 0.5s ease;
   }
 
   .timeline-header-active{
-    margin: 0 40px 0 0;
     transition: all 0.5s ease;
     opacity: 1;
   }
 
-
   .timeline-header ul li a{
+    /* margin: 0 -10px 0 -10px; */
     text-decoration: none;
-    /* color: #fff; */
     color: black;
     text-transform: uppercase;
     display: block;
@@ -294,6 +304,7 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 15px 0;
+  transition: all 0.5s ease;
 }
 
 .timeline::after {
@@ -382,7 +393,7 @@ body {
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: #F6D155;
+  /* background: #F6D155; */
   border: 2px solid #006E51;
   border-radius: 40px;
   text-align: center;
@@ -401,9 +412,17 @@ body {
 
 .container .content {
   padding: 30px 90px 30px 30px;
-  background: #F6D155;
+  
   position: relative;
   border-radius: 0 500px 500px 0;
+}
+
+.container .content-left{
+  background: #F6D155;
+}
+
+.container .content-right{
+  background: lightblue;
 }
 
 .container.right .content {
