@@ -6,80 +6,143 @@
     </a>
   </div>
 
+  <div>
+    <img :src="mockup1" alt="" class="mockupPic">
+  </div>
+
 
 
   <div class="main-contents">
-    <hr style="margin-top: 3rem">
-
-    <div class="timeline-header">
-      <div>
-        <h2>これまでの人生のタイムライン</h2>
-      </div>
-
-      <nav class="menu-container">
-        <ul>
-          <li @click="showingList = 'life'" :class="[showingList === 'life' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-left"><a href="#">私の人生</a></li>
-          <li @click="showingList = 'both'" :class="[showingList === 'both' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-center"><a href="#">全て</a></li>
-          <li @click="showingList = 'programming'" :class="[showingList === 'programming' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-right"><a href="#">プログラミング</a></li>
-        </ul>
-
-        <span class="line"></span>
-
-      </nav>
+    <hr>
 
     
+    <div class="portfolio">
+       <h2 class="pre text-center">Portfolio</h2>
+
+      <div class="portfolio-section">
+        <div class="left-div"> Left </div>
+        <div class="right-div"> Right </div>
+      </div> 
+
+     
+      <section id="portfolio" class="showcase" data-spy="scroll" data-target="#menu">
+        
+        <hr>
+        
+        <div class="container section">
+          <h2 class="pre text-center">Portfolio</h2>
+
+           
+
+          <!-- practice   -->
+
+          
+
+          <div class="row align-items-center h-100 text-center text-lg-left">
+            <div class="col-lg-6 p-lg-0">
+              <picture> <source type="image/webp" data-srcset="/dist/images/agyle-intelligence.webp 1x, /dist/images/agyle-intelligence@2x.webp 2x" class="showcase__preview" srcset="/dist/images/agyle-intelligence.webp 1x, /dist/images/agyle-intelligence@2x.webp 2x"> <img data-src="/dist/images/agyle-intelligence.jpg" data-srcset="/dist/images/agyle-intelligence.jpg 1x,	/dist/images/agyle-intelligence@2x.jpg 2x" alt="Agyle Intelligence" class="showcase__preview loaded" srcset="/dist/images/agyle-intelligence.jpg 1x,	/dist/images/agyle-intelligence@2x.jpg 2x" src="/dist/images/agyle-intelligence.jpg" data-was-processed="true"></picture>
+            </div>
+            <div class="col-lg-5 mx-auto py-3"><h3 class="h3">Agyle Intelligence <span class="badge badge-primary badge-sm">2019</span></h3><p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p><p class="color-gray"><small>Design by <a href="https://dribbble.com/KristinKillam" target="_blank">Kristin Killam</a></small>.</p><a href="https://www.agyleintelligence.com" data-lightbox="" class="btn btn-primary mr-lg-3 d-none d-lg-inline-block">Preview</a><a href="https://agyleintelligence.com" class="btn btn-outline-primary" target="_blank">Visit site</a></div>
+          </div>
+
+
+          <hr>
+          <!-- legit one -->
+
+          <div class="row align-items-center h-100 text-center text-lg-left">
+            <div class="col-lg-6 p-lg-0">
+              <picture> <source type="image/webp" data-srcset="/dist/images/agyle-intelligence.webp 1x, /dist/images/agyle-intelligence@2x.webp 2x" class="showcase__preview" srcset="/dist/images/agyle-intelligence.webp 1x, /dist/images/agyle-intelligence@2x.webp 2x"> <img data-src="/dist/images/agyle-intelligence.jpg" data-srcset="/dist/images/agyle-intelligence.jpg 1x,	/dist/images/agyle-intelligence@2x.jpg 2x" alt="Agyle Intelligence" class="showcase__preview loaded" srcset="/dist/images/agyle-intelligence.jpg 1x,	/dist/images/agyle-intelligence@2x.jpg 2x" src="/dist/images/agyle-intelligence.jpg" data-was-processed="true"></picture>
+            </div>
+            <div class="col-lg-5 mx-auto py-3"><h3 class="h3">Agyle Intelligence <span class="badge badge-primary badge-sm">2019</span></h3><p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p><p class="color-gray"><small>Design by <a href="https://dribbble.com/KristinKillam" target="_blank">Kristin Killam</a></small>.</p><a href="https://www.agyleintelligence.com" data-lightbox="" class="btn btn-primary mr-lg-3 d-none d-lg-inline-block">Preview</a><a href="https://agyleintelligence.com" class="btn btn-outline-primary" target="_blank">Visit site</a></div>
+          </div>
+        </div>
+        
+        
+        
+        <hr><div class="container section"><div class="row align-items-center h-100 text-center text-lg-left"><div class="col-lg-6 p-lg-0"><picture> <source type="image/webp" data-srcset="/dist/images/hal-con.webp 1x, /dist/images/hal-con@2x.webp 2x" class="showcase__preview" srcset="/dist/images/hal-con.webp 1x, /dist/images/hal-con@2x.webp 2x"> <img data-src="/dist/images/hal-con.jpg" data-srcset="/dist/images/hal-con.jpg 1x,	/dist/images/hal-con@2x.jpg 2x" alt="Hal-Con website" class="showcase__preview loaded" srcset="/dist/images/hal-con.jpg 1x,	/dist/images/hal-con@2x.jpg 2x" src="/dist/images/hal-con.jpg" data-was-processed="true"></picture></div><div class="col-lg-5 mx-auto py-3"><h3 class="h3">Hal-Con <span class="badge badge-primary badge-sm">2015</span></h3><p class="showcase__description">Atlantic Canada's premier sci-fi and gaming convention.</p><a href="http://hal-con.com" data-lightbox="" class="btn btn-primary mr-lg-3 d-none d-lg-inline-block">Preview</a><a href="http://hal-con.com" class="btn btn-outline-primary" target="_blank">Visit site</a></div></div></div><hr>
+        
+        
+        
+        
+        </section>
+    </div>
+
+    <div class="timeline-contents">
+
+    
+      <hr style="margin-top: 3rem">
+
+      <div class="timeline-header">
+        <div>
+          <h2>これまでの人生のタイムライン</h2>
+        </div>
+
+        <nav class="menu-container">
+          <ul>
+            <li @click="showingList = 'life'" :class="[showingList === 'life' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-left"><a href="#">私の人生</a></li>
+            <li @click="showingList = 'both'" :class="[showingList === 'both' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-center"><a href="#">全て</a></li>
+            <li @click="showingList = 'programming'" :class="[showingList === 'programming' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-right"><a href="#">プログラミング</a></li>
+          </ul>
+
+          <span class="line"></span>
+
+        </nav>
 
       
-    </div>
-    
 
-    <div class="timeline" v-if="showingList === 'both'">
+        
+      </div>
+      
 
-      <div  v-for="(event, i) in EventList.Everything " :key="i">
-        <div :class="[event.personal? 'left' : 'right']" class="container">
-          <div class="date">{{event.year}}年{{event.month}}月</div>
-          <i class="icon fa fa-home"></i>
-          <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
-            <h2>{{event.description}}</h2>
-            <p>
-              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
+      <div class="timeline" v-if="showingList === 'both'">
+
+        <div  v-for="(event, i) in EventList.Everything " :key="i">
+          <div :class="[event.personal? 'left' : 'right']" class="container">
+            <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
+            <i class="icon fa fa-home"></i>
+            <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
+              <h2>{{event.description}}</h2>
+              <p>
+                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+              </p>
+            </div>
           </div>
         </div>
+
       </div>
 
-    </div>
+      <div class="timeline" v-if="showingList === 'life'">
 
-    <div class="timeline" v-if="showingList === 'life'">
-
-      <div  v-for="(event, i) in EventList.Everything " :key="i">
-        <div :class="[event.personal? 'left' : 'right']" class="container" v-if="event.personal">
-          <div class="date">{{event.year}}年{{event.month}}月</div>
-          <i class="icon fa fa-home"></i>
-          <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
-            <h2>{{event.description}}</h2>
-            <p>
-              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
+        <div  v-for="(event, i) in EventList.Everything " :key="i">
+          <div :class="[event.personal? 'left' : 'right']" class="container" v-if="event.personal">
+            <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
+            <i class="icon fa fa-home"></i>
+            <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
+              <h2>{{event.description}}</h2>
+              <p>
+                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+              </p>
+            </div>
           </div>
         </div>
+
       </div>
 
-    </div>
+      <div class="timeline" v-if="showingList === 'programming'">
 
-    <div class="timeline" v-if="showingList === 'programming'">
-
-      <div  v-for="(event, i) in EventList.Everything " :key="i">
-        <div :class="[event.personal? 'left' : 'right']" class="container" v-if="!event.personal">
-          <div class="date">{{event.year}}年{{event.month}}月</div>
-          <i class="icon fa fa-home"></i>
-          <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
-            <h2>{{event.description}}</h2>
-            <p>
-              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
+        <div  v-for="(event, i) in EventList.Everything " :key="i">
+          <div :class="[event.personal? 'left' : 'right']" class="container" v-if="!event.personal">
+            <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
+            <i class="icon fa fa-home"></i>
+            <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
+              <h2>{{event.description}}</h2>
+              <p>
+                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+              </p>
+            </div>
           </div>
         </div>
+
       </div>
 
     </div>
@@ -99,14 +162,18 @@
 <script>
 
 import { EventList } from './const/TimelineList.js'
+import mockup1 from "/Users/nozomuando/HTML/portfolio/src/assets/mockup1.jpeg"
 
 export default {
   name: 'App',
+  
 
   data(){
     return{
+      mockup1,
       EventList,
       showingList: 'both',
+
 
     }
     
@@ -203,6 +270,32 @@ export default {
     width: 80%;
   }
 
+  /* portfolio------------------------------------------------------------------------------- */
+
+  .mockupPic{
+    height: 200px;
+    width: 275px;
+    
+  }
+
+  .portfolio-section{
+    width: 100%;
+     overflow: hidden;
+  }
+
+  .left-div{
+    width: 30%;
+    float: left;
+    background-color: blue;
+  }
+
+  .right-div{
+    margin-left: 620px;
+    background-color: red;
+  }
+
+  
+
   /* time line header------------------------------------------------------------------------------- */
 
   .timeline-header{
@@ -214,7 +307,6 @@ export default {
   .timeline-header nav{
     padding-bottom: 8px;
     padding-top: 8px;
-    
   }
 
   .menu-container{
