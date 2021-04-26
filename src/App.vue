@@ -1,14 +1,12 @@
 <template>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  <div class="notion-navbar">
+  <div class="notion-navbar w3-teal">
     <a class="notion-link notion-breadcrumb__item single" >
       <span class="notion-navbar__title">Nozomu Ando</span>
     </a>
   </div>
 
-  <div>
-    <img :src="mockup1" alt="" class="mockupPic">
-  </div>
 
 
 
@@ -17,54 +15,80 @@
 
     
     <div class="portfolio">
-       <h2 class="pre text-center">Portfolio</h2>
+       <h2 class="pre text-center" style="textAlign:center">Portfolio</h2>
 
       <div class="portfolio-section">
-        <div class="left-div"> Left </div>
-        <div class="right-div"> Right </div>
+
+        <div class="left-div">
+          <img :src="mockup1" alt="" class="mockupPic">
+        </div>
+        <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
+
+
+        <div class="right-div"> 
+          <div class="col-lg-5 mx-auto py-3">
+
+            <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
+
+            <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
+
+            <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+
+            <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+        </div>
+
+      </div> 
+
+      <hr>
+
+      <div class="portfolio-section">
+
+        <div class="left-div">
+          <img :src="mockup1" alt="" class="mockupPic">
+        </div>
+        <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
+
+
+        <div class="right-div"> 
+          <div class="col-lg-5 mx-auto py-3">
+
+            <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
+
+            <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
+
+            <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+
+            <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+        </div>
+
+      </div> 
+
+      <hr>
+
+
+      <div class="portfolio-section">
+
+        <div class="left-div">
+          <img :src="mockup1" alt="" class="mockupPic">
+        </div>
+        <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
+
+
+        <div class="right-div"> 
+          <div class="col-lg-5 mx-auto py-3">
+
+            <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
+
+            <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
+
+            <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+
+            <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+        </div>
+
       </div> 
 
      
-      <section id="portfolio" class="showcase" data-spy="scroll" data-target="#menu">
-        
-        <hr>
-        
-        <div class="container section">
-          <h2 class="pre text-center">Portfolio</h2>
-
-           
-
-          <!-- practice   -->
-
-          
-
-          <div class="row align-items-center h-100 text-center text-lg-left">
-            <div class="col-lg-6 p-lg-0">
-              <picture> <source type="image/webp" data-srcset="/dist/images/agyle-intelligence.webp 1x, /dist/images/agyle-intelligence@2x.webp 2x" class="showcase__preview" srcset="/dist/images/agyle-intelligence.webp 1x, /dist/images/agyle-intelligence@2x.webp 2x"> <img data-src="/dist/images/agyle-intelligence.jpg" data-srcset="/dist/images/agyle-intelligence.jpg 1x,	/dist/images/agyle-intelligence@2x.jpg 2x" alt="Agyle Intelligence" class="showcase__preview loaded" srcset="/dist/images/agyle-intelligence.jpg 1x,	/dist/images/agyle-intelligence@2x.jpg 2x" src="/dist/images/agyle-intelligence.jpg" data-was-processed="true"></picture>
-            </div>
-            <div class="col-lg-5 mx-auto py-3"><h3 class="h3">Agyle Intelligence <span class="badge badge-primary badge-sm">2019</span></h3><p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p><p class="color-gray"><small>Design by <a href="https://dribbble.com/KristinKillam" target="_blank">Kristin Killam</a></small>.</p><a href="https://www.agyleintelligence.com" data-lightbox="" class="btn btn-primary mr-lg-3 d-none d-lg-inline-block">Preview</a><a href="https://agyleintelligence.com" class="btn btn-outline-primary" target="_blank">Visit site</a></div>
-          </div>
-
-
-          <hr>
-          <!-- legit one -->
-
-          <div class="row align-items-center h-100 text-center text-lg-left">
-            <div class="col-lg-6 p-lg-0">
-              <picture> <source type="image/webp" data-srcset="/dist/images/agyle-intelligence.webp 1x, /dist/images/agyle-intelligence@2x.webp 2x" class="showcase__preview" srcset="/dist/images/agyle-intelligence.webp 1x, /dist/images/agyle-intelligence@2x.webp 2x"> <img data-src="/dist/images/agyle-intelligence.jpg" data-srcset="/dist/images/agyle-intelligence.jpg 1x,	/dist/images/agyle-intelligence@2x.jpg 2x" alt="Agyle Intelligence" class="showcase__preview loaded" srcset="/dist/images/agyle-intelligence.jpg 1x,	/dist/images/agyle-intelligence@2x.jpg 2x" src="/dist/images/agyle-intelligence.jpg" data-was-processed="true"></picture>
-            </div>
-            <div class="col-lg-5 mx-auto py-3"><h3 class="h3">Agyle Intelligence <span class="badge badge-primary badge-sm">2019</span></h3><p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p><p class="color-gray"><small>Design by <a href="https://dribbble.com/KristinKillam" target="_blank">Kristin Killam</a></small>.</p><a href="https://www.agyleintelligence.com" data-lightbox="" class="btn btn-primary mr-lg-3 d-none d-lg-inline-block">Preview</a><a href="https://agyleintelligence.com" class="btn btn-outline-primary" target="_blank">Visit site</a></div>
-          </div>
-        </div>
-        
-        
-        
-        <hr><div class="container section"><div class="row align-items-center h-100 text-center text-lg-left"><div class="col-lg-6 p-lg-0"><picture> <source type="image/webp" data-srcset="/dist/images/hal-con.webp 1x, /dist/images/hal-con@2x.webp 2x" class="showcase__preview" srcset="/dist/images/hal-con.webp 1x, /dist/images/hal-con@2x.webp 2x"> <img data-src="/dist/images/hal-con.jpg" data-srcset="/dist/images/hal-con.jpg 1x,	/dist/images/hal-con@2x.jpg 2x" alt="Hal-Con website" class="showcase__preview loaded" srcset="/dist/images/hal-con.jpg 1x,	/dist/images/hal-con@2x.jpg 2x" src="/dist/images/hal-con.jpg" data-was-processed="true"></picture></div><div class="col-lg-5 mx-auto py-3"><h3 class="h3">Hal-Con <span class="badge badge-primary badge-sm">2015</span></h3><p class="showcase__description">Atlantic Canada's premier sci-fi and gaming convention.</p><a href="http://hal-con.com" data-lightbox="" class="btn btn-primary mr-lg-3 d-none d-lg-inline-block">Preview</a><a href="http://hal-con.com" class="btn btn-outline-primary" target="_blank">Visit site</a></div></div></div><hr>
-        
-        
-        
-        
-        </section>
     </div>
 
     <div class="timeline-contents">
@@ -182,6 +206,10 @@ export default {
 </script>
 
 <style>
+
+/* #4fc08d */
+/* #009688!important; */
+/* #006E51; */
   html {
     font-size: 16px;
     margin:0;
@@ -203,11 +231,12 @@ export default {
 
   .notion-navbar {
     box-shadow: 7px 7px 10px rgb(0 0 0 / 10%), -7px -7px 10px rgb(0 0 0 / 10%);
-    background-color: white;
+    /* background-color: #4fc08d; */
+    /* background-color: teal; */
   }
 
   .notion-navbar {
-    background-color: white;
+    /* background-color: white; */
     height: 45px;
     padding: 0 14px;
     display: -webkit-flex;
@@ -216,7 +245,7 @@ export default {
     -webkit-align-items: center;
     -moz-box-align: center;
     align-items: center;
-    background-color: #fff;
+    /* background-color: #fff; */
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
@@ -279,19 +308,23 @@ export default {
   }
 
   .portfolio-section{
+    
+
     width: 100%;
-     overflow: hidden;
+    overflow: hidden;
   }
 
   .left-div{
     width: 30%;
     float: left;
-    background-color: blue;
+    margin-left: 20px;
+    /* background-color: blue; */
   }
 
   .right-div{
     margin-left: 620px;
-    background-color: red;
+    margin-right: 20px;
+    /* background-color: red; */
   }
 
   
@@ -403,7 +436,7 @@ body {
   content: '';
   position: absolute;
   width: 2px;
-  background: #006E51;
+  background: #009688;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -433,7 +466,7 @@ body {
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #006E51;
+  border: 2px solid #009688;
   border-radius: 16px;
   z-index: 1;
 }
@@ -449,7 +482,7 @@ body {
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #006E51;
+  background: #009688;
   z-index: 1;
 }
 
@@ -464,7 +497,7 @@ body {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: #006E51;
+  color: #009688;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -486,11 +519,11 @@ body {
   padding: 9px 0;
   top: calc(50% - 20px);
   /* background: #F6D155; */
-  border: 2px solid #006E51;
+  border: 2px solid #009688;
   border-radius: 40px;
   text-align: center;
   font-size: 18px;
-  color: #006E51;
+  color: #009688;
   z-index: 1;
 }
 
@@ -526,7 +559,7 @@ body {
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: normal;
-  color: #006E51;
+  color: #009688
 }
 
 .container .content p {
