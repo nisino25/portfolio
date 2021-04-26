@@ -228,7 +228,7 @@ export default {
   }
   
   /* header --------------------------------- */
-
+ 
   .notion-navbar {
     box-shadow: 7px 7px 10px rgb(0 0 0 / 10%), -7px -7px 10px rgb(0 0 0 / 10%);
     /* background-color: #4fc08d; */
