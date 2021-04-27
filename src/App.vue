@@ -20,7 +20,7 @@
       <div class="portfolio-section">
 
         <div class="left-div">
-          <img :src="mockup1" alt="" class="mockupPic">
+          <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
         </div>
         <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
 
@@ -44,7 +44,7 @@
       <div class="portfolio-section">
 
         <div class="left-div">
-          <img :src="mockup1" alt="" class="mockupPic">
+          <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
         </div>
         <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
 
@@ -69,7 +69,7 @@
       <div class="portfolio-section">
 
         <div class="left-div">
-          <img :src="mockup1" alt="" class="mockupPic">
+          <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
         </div>
         <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
 
@@ -186,7 +186,7 @@
 <script>
 
 import { EventList } from './const/TimelineList.js'
-import mockup1 from "/Users/nozomuando/HTML/portfolio/src/assets/mockup1.jpeg"
+// import mockup1 from "/Users/nozomuando/HTML/portfolio/src/assets/mockup1.jpeg"
 
 export default {
   name: 'App',
@@ -194,7 +194,7 @@ export default {
 
   data(){
     return{
-      mockup1,
+      // mockup1,
       EventList,
       showingList: 'both',
 
