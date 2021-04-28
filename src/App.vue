@@ -11,6 +11,9 @@
 
 
   <div class="main-contents">
+
+    
+
     <hr>
 
     
@@ -308,8 +311,7 @@ export default {
   }
 
   .portfolio-section{
-    
-
+    display: flex;  
     width: 100%;
     overflow: hidden;
   }
@@ -504,11 +506,11 @@ body {
 }
 
 .container.left .date {
-  right: -75px;
+  right: -200px;
 }
 
 .container.right .date {
-  left: -75px;
+  left: -200px;
 }
 
 .container .icon {
