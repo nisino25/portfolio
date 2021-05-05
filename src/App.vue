@@ -1,6 +1,6 @@
 <template>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+  
   <div class="notion-navbar w3-white">
     <a class="notion-link notion-breadcrumb__item single" >
       <span class="notion-navbar__title">Nozomu Ando</span>
@@ -8,6 +8,17 @@
   </div>
 
   <div class="landing">
+    <section class="col-lg-6">
+      <h3 style="color:#009688">安藤望のポートフォリオへようこそ！</h3>
+      <span>
+        ウェブサイトを見に来てくださり、ありがとうございます! <br>
+        高校２年生の時に高校を中退し、アメリカの高校に一年留学。帰国後１年後に再度アメリカのにコミニュティーカレッジの入学後、プログラミングを勉強し始めました。始めて学んだ言語はC++ とPythonで、それからプログラミンの兄の影響を受け、ウェブデザインの方にも興味を持ち始めて、HTML/CSS、Ruby on Railsも勉強し始めました。２０２０年の春からはVue.jsの勉強を本格的に始め、プログラマーの兄や、Udemyなどを使って勉強をして、いくつかのウェブサイトを作りました。
+      </span>
+      <br>
+      <!-- <button class="btn-primary">hey</button> -->
+      
+
+    </section>
     <div class="green-cover"></div>
   </div>
 
@@ -17,7 +28,6 @@
 
   <div class="main-contents">
 
-    
   </div>
 
     
@@ -191,6 +201,7 @@
 
 <script>
 
+
 import { EventList } from './const/TimelineList.js'
 // import mockup1 from "/Users/nozomuando/HTML/portfolio/src/assets/mockup1.jpeg"
 
@@ -308,6 +319,8 @@ export default {
     background-color: #F9F9F9;
     height: 100vh;
     margin-top: 0;
+    top: 0;
+    /* position: abos; */
 
   }
 
@@ -321,6 +334,19 @@ export default {
     transform: skewX(20deg);
     top: 0;
     left: 50%;
+  }
+
+  .landing section{
+    background-color: #F9F9F9;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 40%;
+    margin-left: 5%;
+    /* margin-top: 10%; */
+
+    /* z-index:3; */
+    /* color: red; */
   }
 
 
