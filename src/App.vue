@@ -1,11 +1,16 @@
 <template>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  <div class="notion-navbar w3-teal">
+  <div class="notion-navbar w3-white">
     <a class="notion-link notion-breadcrumb__item single" >
       <span class="notion-navbar__title">Nozomu Ando</span>
     </a>
   </div>
+
+  <div class="landing">
+    <div class="green-cover"></div>
+  </div>
+
 
 
 
@@ -13,9 +18,9 @@
   <div class="main-contents">
 
     
+  </div>
 
-    <hr>
-
+    
     
     <div class="portfolio">
        <h2 class="pre text-center" style="textAlign:center">Portfolio</h2>
@@ -94,10 +99,10 @@
      
     </div>
 
-    <div class="timeline-contents">
+    <div class="timeline-contents" style="backgroundColor: #F9F9F9">
 
     
-      <hr style="margin-top: 3rem">
+      <!-- <hr style="margin-top: 3rem"> -->
 
       <div class="timeline-header">
         <div>
@@ -123,7 +128,7 @@
 
       <div class="timeline" v-if="showingList === 'both'">
 
-        <div  v-for="(event, i) in EventList.Everything " :key="i">
+        <div  v-for="(event, i) in EventList " :key="i">
           <div :class="[event.personal? 'left' : 'right']" class="container">
             <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
             <i class="icon fa fa-home"></i>
@@ -140,7 +145,7 @@
 
       <div class="timeline" v-if="showingList === 'life'">
 
-        <div  v-for="(event, i) in EventList.Everything " :key="i">
+        <div  v-for="(event, i) in EventList " :key="i">
           <div :class="[event.personal? 'left' : 'right']" class="container" v-if="event.personal">
             <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
             <i class="icon fa fa-home"></i>
@@ -157,7 +162,7 @@
 
       <div class="timeline" v-if="showingList === 'programming'">
 
-        <div  v-for="(event, i) in EventList.Everything " :key="i">
+        <div  v-for="(event, i) in EventList " :key="i">
           <div :class="[event.personal? 'left' : 'right']" class="container" v-if="!event.personal">
             <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
             <i class="icon fa fa-home"></i>
@@ -176,8 +181,6 @@
     
    
 
-
-  </div>
 
 
   <!-- </div> -->
@@ -211,8 +214,12 @@ export default {
 <style>
 
 /* #4fc08d */
+
 /* #009688!important; */
 /* #006E51; */
+
+/* #F9F9F9 grey */
+
   html {
     font-size: 16px;
     margin:0;
@@ -258,7 +265,7 @@ export default {
     /* background-color: var(--color-bg-default); */
   }
 
-  /* divider --------------------------------- */
+  /* divider -------------------------------------------- */
   .divider
   {
     position: relative;
@@ -294,6 +301,29 @@ export default {
             0 0 0 4px white;
   }
 
+
+  /* landing------------------------------------------------------------------------------- */
+
+  .landing{
+    background-color: #F9F9F9;
+    height: 100vh;
+    margin-top: 0;
+
+  }
+
+  .green-cover{
+    position: absolute;
+    content: '';
+    width: 1000%;
+    height: 100%;
+    background-color: #009688;
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    top: 0;
+    left: 50%;
+  }
+
+
   /* main content ------------------------------------------------------------------------------- */
   .main-contents{
     display: block;
@@ -319,13 +349,16 @@ export default {
   .left-div{
     width: 30%;
     float: left;
-    margin-left: 20px;
+    margin-left: 15%;
+    /* margin-left: 150px; */
+
     /* background-color: blue; */
   }
 
   .right-div{
-    margin-left: 620px;
-    margin-right: 20px;
+    margin-left: 25%;
+    /* margin-left: 30%; */
+    /* margin-right: 20px; */
     /* background-color: red; */
   }
 
@@ -409,7 +442,7 @@ export default {
     
         
         
-/* ----------------------------------------------------------------------------------------------- */
+/* timeline -------------------------------------------------------------------------------- */
 
 
 
