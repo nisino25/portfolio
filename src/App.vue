@@ -1,6 +1,8 @@
 <template>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   <div class="notion-navbar w3-white">
     <a class="notion-link notion-breadcrumb__item single" >
       <span class="notion-navbar__title">Nozomu Ando</span>
@@ -12,6 +14,7 @@
       <h3 style="color:#009688">安藤望のポートフォリオへようこそ！</h3>
       <span>
         ウェブサイトを見に来てくださり、ありがとうございます! <br>
+        北海道の札幌出身の２１才 ウェブプログラマー（希望）です。
         高校２年生の時に高校を中退し、アメリカの高校に一年留学。帰国後１年後に再度アメリカのにコミニュティーカレッジの入学後、プログラミングを勉強し始めました。始めて学んだ言語はC++ とPythonで、それからプログラミンの兄の影響を受け、ウェブデザインの方にも興味を持ち始めて、HTML/CSS、Ruby on Railsも勉強し始めました。２０２０年の春からはVue.jsの勉強を本格的に始め、プログラマーの兄や、Udemyなどを使って勉強をして、いくつかのウェブサイトを作りました。
       </span>
       <br>
@@ -188,12 +191,24 @@
       </div>
 
     </div>
+
+    <div class="cotact-me">
+      <div class="down-below">
+      </div>
+      <div class="contact-contents">
+        <span>nisino25@gmail.com</span>
+        <br>
+
+        <button @click="topFunction()"> ↑ </button>
+        <a href="#" class="fa fa-instagram"></a>
+        <!-- button to that will take us to top with smooth animation
+        iG -->
+      </div>
+    </div>
     
    
 
 
-
-  <!-- </div> -->
 
  
   
@@ -219,6 +234,12 @@ export default {
     }
     
   }, 
+  methods:{
+    topFunction(){
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    },
+  }
+  
 }
 </script>
 
@@ -456,15 +477,6 @@ export default {
     letter-spacing: .2em;
     font-size: 10px;
   }
-
-  /* .line{
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    margin: 10px 0 0 0;
-    background: #FF1847;
-
-  } */
     
         
         
@@ -675,4 +687,64 @@ body {
   }
 }
 
+/* timeline -------------------------------------------------------------------------------- */
+
+.cotact-me{
+  position: relative;
+  bottom: 0;
+  left: 50%; 
+  height: 50rem;
+  margin-top: 100px;
+  transform: translateX(-50%);
+
+  overflow: hidden;  
+  /* background-color: red; */
+}
+
+.down-below{
+  /* 
+  padding: 10px;
+  height: 20rem;
+  width: 100%;
+  border-radius: 100% 100% 0 0;
+  background-color: #009688; */
+
+  position: absolute;
+  bottom: 0;
+  left: -10; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  background-color: #009688;
+
+  width: 150%;
+  height: 150%;
+  border-radius: 100%;
+  top: 50%;
+  left: -25%;
+  right: 0;
+  position: relative;
+
+}
+
+.contact-contents{
+  color: black;
+  position: absolute;
+  top: 0;
+  /* background-color: red; */
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #125688;
+  color:white;
+}
+
+
+
 </style>
+ 
