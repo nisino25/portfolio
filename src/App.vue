@@ -33,178 +33,195 @@
 
   </div>
 
+  
     
+  <div class="portfolio">
+      <h2 class="pre text-center" style="textAlign:center">Portfolio</h2>
+
+    <div class="portfolio-section">
+
+      <div class="left-div">
+        <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
+      </div>
+      <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
+
+
+      <div class="right-div"> 
+        <div class="col-lg-5 mx-auto py-3">
+
+          <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
+
+          <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
+
+          <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+
+          <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+      </div>
+
+    </div> 
+
+    <hr>
+
+    <div class="portfolio-section">
+
+      <div class="left-div">
+        <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
+      </div>
+      <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
+
+
+      <div class="right-div"> 
+        <div class="col-lg-5 mx-auto py-3">
+
+          <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
+
+          <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
+
+          <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+
+          <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+      </div>
+
+    </div> 
+
+    <hr>
+
+
+    <div class="portfolio-section">
+
+      <div class="left-div">
+        <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
+      </div>
+      <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
+
+
+      <div class="right-div"> 
+        <div class="col-lg-5 mx-auto py-3">
+
+          <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
+
+          <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
+
+          <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+
+          <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+      </div>
+
+    </div> 
+
     
-    <div class="portfolio">
-       <h2 class="pre text-center" style="textAlign:center">Portfolio</h2>
+  </div>
 
-      <div class="portfolio-section">
+  <div class="timeline-contents" style="backgroundColor: #F9F9F9">
 
-        <div class="left-div">
-          <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
-        </div>
-        <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
+  
+    <!-- <hr style="margin-top: 3rem"> -->
 
+    <div class="timeline-header">
+      <div>
+        <h2>これまでの人生のタイムライン</h2>
+      </div>
 
-        <div class="right-div"> 
-          <div class="col-lg-5 mx-auto py-3">
+      <nav class="menu-container">
+        <ul>
+          <li @click="showingList = 'life'" :class="[showingList === 'life' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-left"><a href="#">私の人生</a></li>
+          <li @click="showingList = 'both'" :class="[showingList === 'both' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-center"><a href="#">全て</a></li>
+          <li @click="showingList = 'programming'" :class="[showingList === 'programming' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-right"><a href="#">プログラミング</a></li>
+        </ul>
 
-            <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
+        <span class="line"></span>
 
-            <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
+      </nav>
 
-            <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+    
 
-            <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
-        </div>
-
-      </div> 
-
-      <hr>
-
-      <div class="portfolio-section">
-
-        <div class="left-div">
-          <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
-        </div>
-        <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
-
-
-        <div class="right-div"> 
-          <div class="col-lg-5 mx-auto py-3">
-
-            <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
-
-            <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
-
-            <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
-
-            <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
-        </div>
-
-      </div> 
-
-      <hr>
-
-
-      <div class="portfolio-section">
-
-        <div class="left-div">
-          <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
-        </div>
-        <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
-
-
-        <div class="right-div"> 
-          <div class="col-lg-5 mx-auto py-3">
-
-            <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
-
-            <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
-
-            <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
-
-            <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
-        </div>
-
-      </div> 
-
-     
+      
     </div>
-
-    <div class="timeline-contents" style="backgroundColor: #F9F9F9">
-
     
-      <!-- <hr style="margin-top: 3rem"> -->
 
-      <div class="timeline-header">
-        <div>
-          <h2>これまでの人生のタイムライン</h2>
-        </div>
+    <div class="timeline" v-if="showingList === 'both'">
 
-        <nav class="menu-container">
-          <ul>
-            <li @click="showingList = 'life'" :class="[showingList === 'life' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-left"><a href="#">私の人生</a></li>
-            <li @click="showingList = 'both'" :class="[showingList === 'both' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-center"><a href="#">全て</a></li>
-            <li @click="showingList = 'programming'" :class="[showingList === 'programming' ? 'timeline-header-active' : 'timeline-header-deactive']" class="menu-right"><a href="#">プログラミング</a></li>
-          </ul>
-
-          <span class="line"></span>
-
-        </nav>
-
-      
-
-        
-      </div>
-      
-
-      <div class="timeline" v-if="showingList === 'both'">
-
-        <div  v-for="(event, i) in EventList " :key="i">
-          <div :class="[event.personal? 'left' : 'right']" class="container">
-            <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
-            <i class="icon fa fa-home"></i>
-            <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
-              <h2>{{event.description}}</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-              </p>
-            </div>
+      <div  v-for="(event, i) in EventList " :key="i">
+        <div :class="[event.personal? 'left' : 'right']" class="container">
+          <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
+          <i class="icon fa fa-home"></i>
+          <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
+            <h2>{{event.description}}</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
           </div>
         </div>
-
-      </div>
-
-      <div class="timeline" v-if="showingList === 'life'">
-
-        <div  v-for="(event, i) in EventList " :key="i">
-          <div :class="[event.personal? 'left' : 'right']" class="container" v-if="event.personal">
-            <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
-            <i class="icon fa fa-home"></i>
-            <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
-              <h2>{{event.description}}</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="timeline" v-if="showingList === 'programming'">
-
-        <div  v-for="(event, i) in EventList " :key="i">
-          <div :class="[event.personal? 'left' : 'right']" class="container" v-if="!event.personal">
-            <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
-            <i class="icon fa fa-home"></i>
-            <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
-              <h2>{{event.description}}</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-              </p>
-            </div>
-          </div>
-        </div>
-
       </div>
 
     </div>
 
-    <div class="cotact-me">
-      <div class="down-below">
+    <div class="timeline" v-if="showingList === 'life'">
+
+      <div  v-for="(event, i) in EventList " :key="i">
+        <div :class="[event.personal? 'left' : 'right']" class="container" v-if="event.personal">
+          <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
+          <i class="icon fa fa-home"></i>
+          <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
+            <h2>{{event.description}}</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="contact-contents">
+
+    </div>
+
+    <div class="timeline" v-if="showingList === 'programming'">
+
+      <div  v-for="(event, i) in EventList " :key="i">
+        <div :class="[event.personal? 'left' : 'right']" class="container" v-if="!event.personal">
+          <div class="date">{{event.year}}年{{event.month}}月（{{event.age}}才）</div>
+          <i class="icon fa fa-home"></i>
+          <div class="content" :class="[event.personal? 'content-left' : 'content-right']">
+            <h2>{{event.description}}</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="contact-me">
+    <div class="down-below">
+    </div>
+
+    <div class="contact-contents" style="text-align: center" >
+      <span style="">CONTACT ME</span>
+      <section >
+        <a href="https://www.instagram.com/nisino25/?hl=en" target="_blank" class="fa fa-envelope"></a>
         <span>nisino25@gmail.com</span>
-        <br>
+      </section>
 
-        <button @click="topFunction()"> ↑ </button>
-        <a href="#" class="fa fa-instagram"></a>
-        <!-- button to that will take us to top with smooth animation
-        iG -->
-      </div>
+      <section>
+        <a href="https://www.instagram.com/nisino25/?hl=en" target="_blank" class="fa fa-phone"></a>
+        <span>070-8985-6342</span>
+      </section>
+
+      <section style="text-align:center">
+        <a href="https://www.instagram.com/nisino25/?hl=en" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://github.com/nisino25?tab=repositories" target="_blank" class="fa fa-github" aria-hidden="true"></a>
+
+      </section>
+      
+      <p style="opacity: 0.5; text-align: center;">&copy;2021 Nozomu Ando</p>
+
+      <!-- <button @click="topFunction()" style="margin-top:25px"> ↑ </button> -->
+      <a class="fa fa-arrow-up" @click="topFunction()" style="margin-top:25px"></a>
+      <!-- button to that will take us to top with smooth animation
+      iG -->
     </div>
+  </div>
     
    
 
@@ -687,9 +704,9 @@ body {
   }
 }
 
-/* timeline -------------------------------------------------------------------------------- */
+/* contat-me -------------------------------------------------------------------------------- */
 
-.cotact-me{
+.contact-me{
   position: relative;
   bottom: 0;
   left: 50%; 
@@ -698,17 +715,9 @@ body {
   transform: translateX(-50%);
 
   overflow: hidden;  
-  /* background-color: red; */
 }
 
 .down-below{
-  /* 
-  padding: 10px;
-  height: 20rem;
-  width: 100%;
-  border-radius: 100% 100% 0 0;
-  background-color: #009688; */
-
   position: absolute;
   bottom: 0;
   left: -10; 
@@ -726,23 +735,45 @@ body {
   position: relative;
 
 }
+/* .contact-me{
+  margin-left: auto; 
+  margin-right: auto; 
+  position: absolute;
+} */
 
 .contact-contents{
   color: black;
   position: absolute;
-  top: 0;
-  /* background-color: red; */
+
+  
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
 }
 
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #125688;
-  color:white;
+.contact-contents section{
+  margin-bottom: 10px;
 }
+
+.contact-me a {
+  /* display: block; */
+  width: 1.5em;
+  height: 1.5em;
+  color: #222733;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  background-color: #DBE8D4;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 10px
+}
+
+
 
 
 
