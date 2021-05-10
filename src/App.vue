@@ -1,4 +1,10 @@
 <template>
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.ibb.co/SJkgPg9/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/SJkgPg9/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/SJkgPg9/android-chrome-512x512.png">
+  <link rel="manifest" href="https://i.ibb.co/SJkgPg9/android-chrome-512x512.png">
+  </head>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -7,6 +13,11 @@
     <a class="notion-link notion-breadcrumb__item single" >
       <span class="notion-navbar__title">Nozomu Ando</span>
     </a>
+
+    <a class="notion-link notion-breadcrumb__item single" style="position:absolute; right:0; marginRight:10px" >
+      <span class="notion-navbar__title">nisino25@gmail.com</span>
+    </a>
+    
   </div>
 
   <div class="landing">
@@ -24,7 +35,6 @@
     </section>
     <div class="green-cover"></div>
   </div>
-
 
 
 
@@ -262,11 +272,13 @@ export default {
 
 <style>
 
+/* https://ibb.co/wYnqRqx */
+
 /* #4fc08d */
 
 /* #009688!important; */
 /* #006E51; */
-
+ 
 /* #F9F9F9 grey */
 
   html {
@@ -389,12 +401,13 @@ export default {
 
 
   /* main content ------------------------------------------------------------------------------- */
-  .main-contents{
+  
+  /* .main-contents{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-  }
+  } */
 
   /* portfolio------------------------------------------------------------------------------- */
 
@@ -403,6 +416,14 @@ export default {
     width: 275px;
     
   }
+
+  .portfolio{
+    
+  }
+
+
+  
+
 
   .portfolio-section{
     display: flex;  
@@ -757,7 +778,7 @@ body {
   margin-bottom: 10px;
 }
 
-.contact-me a {
+.contact-me a{
   /* display: block; */
   width: 1.5em;
   height: 1.5em;
