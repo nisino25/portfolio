@@ -59,13 +59,13 @@
       <div class="right-div"> 
         <div class="col-lg-5 mx-auto py-3">
 
-          <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
+          <h3 class="h3">Cube timer<span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2021</span></h3>
 
-          <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
+          <p class="showcase__description mb-4 color-gray">こちらは、スマホユーザー向けに作成した、僕の趣味であるルービックキューブのタイマーとそれに伴うデータを管理するアプリです。Local Storageやタイマーファンクション、データのビジュアル化を充填的にがんばりました。パズルに集中できるようにメイン画面で全てわかるようにしました。</p>
 
-          <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+          <a href="https://github.com/nisino25/cube" target="_blank" class="w3-button w3-teal w3-border w3-round-large">Github</a>
 
-          <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+          <a href="https://nisino25-cube-timer.netlify.app/" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
       </div>
 
     </div> 
@@ -412,17 +412,32 @@ export default {
   /* portfolio------------------------------------------------------------------------------- */
 
   .mockupPic{
-    height: 200px;
-    width: 275px;
+    height: 300px;
+    width: 450px;
+    background-position-y: 50%;
     
   }
 
-  .portfolio{
-    
+  .left-div{
+  float:left;
+  width:50%;
+  overflow:hidden;
+  }
+  .right-div{
+  float:left;
+  width:50%;
+  overflow:hidden;
+  } 
+
+  .right-div span{
+    margin-left: 10px;
   }
 
+  .right-div p{
+     max-width:400px;
+    word-wrap:break-word;
+  }
 
-  
 
 
   .portfolio-section{
@@ -433,18 +448,14 @@ export default {
 
   .left-div{
     width: 30%;
-    float: left;
+    /* float: left; */
     margin-left: 15%;
-    /* margin-left: 150px; */
 
     /* background-color: blue; */
   }
 
   .right-div{
     margin-left: 25%;
-    /* margin-left: 30%; */
-    /* margin-right: 20px; */
-    /* background-color: red; */
   }
 
   
