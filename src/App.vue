@@ -25,8 +25,8 @@
       <h3 style="color:#009688">安藤望のポートフォリオへようこそ！</h3>
       <span>
         ウェブサイトを見に来てくださり、ありがとうございます! <br>
-        北海道の札幌出身の２１才 ウェブプログラマー（希望）です。
-        高校２年生の時に高校を中退し、アメリカの高校に一年留学。帰国後１年後に再度アメリカのにコミニュティーカレッジの入学後、プログラミングを勉強し始めました。始めて学んだ言語はC++ とPythonで、それからプログラミンの兄の影響を受け、ウェブデザインの方にも興味を持ち始めて、HTML/CSS、Ruby on Railsも勉強し始めました。２０２０年の春からはVue.jsの勉強を本格的に始め、プログラマーの兄や、Udemyなどを使って勉強をして、いくつかのウェブサイトを作りました。
+        北海道の札幌出身、現在京都市に在住の２１才 ウェブプログラマー（希望）です。
+        高校２年生の時に高校を中退し、アメリカの高校に一年留学。帰国後１年後に再度アメリカのにコミニュティーカレッジの入学後、プログラミングを勉強し始めました。始めて学んだ言語はC++ とPythonで、それからプログラマーの兄の影響を受け、ウェブデザインの方にも興味を持ち始めて、HTML/CSS、Ruby on Railsも勉強し始めました。２０２０年の春からはVue.jsの勉強を本格的に始め、プログラマーの兄や、Udemyなどを使って勉強をして、いくつかのウェブサイトを作りました。
       </span>
       <br>
       <!-- <button class="btn-primary">hey</button> -->
@@ -48,10 +48,60 @@
   <div class="portfolio">
       <h2 class="pre text-center" style="textAlign:center">Portfolio</h2>
 
+    <hr>
+
     <div class="portfolio-section">
 
       <div class="left-div">
-        <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
+        <img src="https://i.ibb.co/VtckFqh/Screen-Shot-2021-05-11-at-23-47-05.png" alt="" class="mockupPic">
+      </div>
+
+
+      <div class="right-div"> 
+        <div class="col-lg-5 mx-auto py-3">
+
+          <h3 class="h3">Movie - TV List<span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2020</span></h3>
+
+          <p class="showcase__description mb-4 color-gray">アメリカ人の妻の日本語の練習のために、しりとりの対戦ができるウェブサイトを作りました。Firebaseを使い初めてリアルタイムでデータを送信、取得するアプリを作りました。しりとりの細かいルールを作るのに大変苦労しましたが、なんとか完成できました。
+          </p>
+
+          <a href="https://github.com/nisino25/shiritori" target="_blank" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+
+          <a href="https://nisino25-shiritori.netlify.app/" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+      </div>
+
+    </div> 
+
+    <hr>
+
+    <div class="portfolio-section">
+
+      <div class="left-div">
+        <img :src="noPic" alt="" class="mockupPic">
+      </div>
+
+
+      <div class="right-div"> 
+        <div class="col-lg-5 mx-auto py-3">
+
+          <h3 class="h3">Movie - TV List<span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2020</span></h3>
+
+          <p class="showcase__description mb-4 color-gray">過去に見た映画やドラマの作品や、将来に見たい作品などを管理するアプリが欲しいと思いこちらのサイトを作りました。Googleアカウントによるログイン/サインアップの機能を初めて使いました。Firebaseでユーザーのデータ管理をしています。初めてAPIを使ってデータを取得したのも初めてでした。
+          </p>
+
+          <a href="https://github.com/nisino25/movie_list" target="_blank" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+
+          <a href="https://movie-tv-lists.netlify.app/" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+      </div>
+
+    </div> 
+
+    <hr>
+
+    <div class="portfolio-section">
+
+      <div class="left-div">
+        <img src="https://i.ibb.co/0rRH3LB/Screen-Shot-2021-05-11-at-23-50-00.png" alt="" class="mockupPic">
       </div>
       <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
 
@@ -70,12 +120,14 @@
 
     </div> 
 
+
+
     <hr>
 
     <div class="portfolio-section">
 
       <div class="left-div">
-        <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
+        <img src="https://i.ibb.co/kHf3NtK/Screen-Shot-2021-05-11-at-23-58-26.png" alt="" class="mockupPic">
       </div>
       <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
 
@@ -83,41 +135,21 @@
       <div class="right-div"> 
         <div class="col-lg-5 mx-auto py-3">
 
-          <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
+          <h3 class="h3">NBA Score board<span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2021</span></h3>
 
-          <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
+          <p class="showcase__description mb-4 color-gray">小学校の頃から大好きなNBA（アメリカのプロバスケットボールリーグ）の試合結果を生で伝えるアプリです。データ取得方法はAPIです。シーズン中は毎日１０試合程行われて、１試合を全て丸々見るとなると２時間以上かかってしまうので、面白い試合だけをピックアップするアルゴリズムを組みました</p>
 
-          <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+          <a href="https://github.com/nisino25/nba-scoreboard-JPN" target="_blank" class="w3-button w3-teal w3-border w3-round-large">Github</a>
 
-          <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+          <a href="https://nisino25-nba-scoreboard.netlify.app/" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
       </div>
 
     </div> 
+
 
     <hr>
 
 
-    <div class="portfolio-section">
-
-      <div class="left-div">
-        <img src="https://i.ibb.co/GtjfPqn/ea3f95d826372dacbde23ad25e78675b.jpg" alt="" class="mockupPic">
-      </div>
-      <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
-
-
-      <div class="right-div"> 
-        <div class="col-lg-5 mx-auto py-3">
-
-          <h3 class="h3">Agyle Intelligence <span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2019</span></h3>
-
-          <p class="showcase__description mb-4 color-gray">A platform for automating data collection and reporting throughout teams, operations and supply chains.</p>
-
-          <a href="https://www.agyleintelligence.com" class="w3-button w3-teal w3-border w3-round-large">Github</a>
-
-          <a href="https://agyleintelligence.com" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
-      </div>
-
-    </div> 
 
     
   </div>
@@ -256,6 +288,7 @@ export default {
       // mockup1,
       EventList,
       showingList: 'both',
+      noPic: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/450px-No_image_available.svg.png',
 
 
     }
@@ -412,8 +445,8 @@ export default {
   /* portfolio------------------------------------------------------------------------------- */
 
   .mockupPic{
-    height: 300px;
-    width: 450px;
+    height: 225px;
+    width: 300px;
     background-position-y: 50%;
     
   }
