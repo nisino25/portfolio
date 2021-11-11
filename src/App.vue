@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/SJkgPg9/android-chrome-512x512.png">
   <link rel="manifest" href="https://i.ibb.co/SJkgPg9/android-chrome-512x512.png">
   </head>
+
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +34,7 @@
         <h3 style="color:#009688">安藤望のポートフォリオへようこそ！</h3>
         <span>
           ウェブサイトを見に来てくださり、ありがとうございます! <br>
-          北海道の札幌出身、現在京都市に在住の２１才 ウェブプログラマー（希望）です。
+          北海道の札幌出身、現在京都市に在住の２２才 WEBプログラマー（希望）です。
           高校２年生の時に高校を中退し、アメリカの高校に一年留学。帰国後１年後に再度アメリカのにコミニュティーカレッジの入学後、プログラミングを勉強し始めました。始めて学んだ言語はC++ とPythonで、それからプログラマーの兄の影響を受け、ウェブデザインの方にも興味を持ち始めて、HTML/CSS、Ruby on Railsも勉強し始めました。2020年の春からはVue.jsの勉強を本格的に始め、プログラマーの兄とのマンツーマン、それとUdemyなどを使って勉強をして、いくつかのウェブサイトを作りました。
         </span>
         <br>
@@ -62,7 +63,53 @@
       <div class="portfolio-section">
 
         <div class="left-div">
-          <img src="https://i.ibb.co/VtckFqh/Screen-Shot-2021-05-11-at-23-47-05.png" alt="" class="mockupPic">
+          <img src="https://i.ibb.co/THggt6k/IMG-2371.jpg" alt="" class="mockupPic">
+        </div>
+
+
+        <div class="right-div"> 
+          <div class="col-lg-5 mx-auto py-3">
+
+            <h3 class="h3">日記アプリ<span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2021</span></h3>
+
+            <p class="showcase__description mb-4 color-gray">日々の記録をつけるために、日記のアプリを作ってみました。過去のカレンダーを一目みて、どんな１日だったのかを確認できるようにしました。
+            </p>
+
+            <a href="https://github.com/nisino25/nikki" target="_blank" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+
+            <a href="https://nisino25-nikki.netlify.app/" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+        </div>
+
+      </div> 
+      <hr>
+
+      <div class="portfolio-section">
+
+        <div class="left-div">
+          <img src="https://i.ibb.co/dGTLrPg/IMG-2367.jpg" alt="" class="mockupPic">
+        </div>
+
+
+        <div class="right-div"> 
+          <div class="col-lg-5 mx-auto py-3">
+
+            <h3 class="h3">リマインダー<span class="w3-tag w3-round-large w3-small w3-padding w3-teal"  >2021</span></h3>
+
+            <p class="showcase__description mb-4 color-gray">iOSの方のリマインダーアプリに不具合があったので、自ら作ってみました。このアプリではアニメーションに力を入れてみました。
+            </p>
+
+            <a href="https://github.com/nisino25/reminder" target="_blank" class="w3-button w3-teal w3-border w3-round-large">Github</a>
+
+            <a href="https://nisino25-reminder.netlify.app/" class="w3-button w3-white w3-border w3-border-teal w3-round-large" target="_blank" style="margin-left:20px">サイトを訪れる</a></div>
+        </div>
+
+      </div> 
+      <hr>
+
+      <div class="portfolio-section">
+
+        <div class="left-div">
+          <img src="https://i.ibb.co/qYRLJJh/IMG-2359.jpg" alt="" class="mockupPic">
         </div>
 
 
@@ -110,7 +157,7 @@
       <div class="portfolio-section">
 
         <div class="left-div">
-          <img src="https://i.ibb.co/0rRH3LB/Screen-Shot-2021-05-11-at-23-50-00.png" alt="" class="mockupPic">
+          <img src="https://i.ibb.co/kgfqqjV/IMG-2354.jpg" alt="" class="mockupPic">
         </div>
         <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
 
@@ -136,7 +183,7 @@
       <div class="portfolio-section">
 
         <div class="left-div">
-          <img src="https://i.ibb.co/kHf3NtK/Screen-Shot-2021-05-11-at-23-58-26.png" alt="" class="mockupPic">
+          <img src="https://i.ibb.co/1snm3VP/IMG-2350.jpg" alt="" class="mockupPic">
         </div>
         <!-- <p>News <span class="w3-badge w3-green">6</span></p> -->
 
@@ -456,21 +503,43 @@ export default {
   /* portfolio------------------------------------------------------------------------------- */
 
   .mockupPic{
-    height: 225px;
-    width: 300px;
-    background-position-y: 50%;
+    height: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    /* height: 450px; */
+      text-align: center;
+      margin-left: auto;
+      margin-right: 0;
+
+    border:2px solid #fff;
+  /* background: url(img/tiger.png) no-repeat; */
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius:25px;
+
+    /* flex-shrink: 0; */
     
   }
 
   .left-div{
-  float:left;
+  float:left; 
   width:50%;
-  overflow:hidden;
+  /* overflow:hidden; */
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
+
   .right-div{
-  float:left;
+  float:right;
   width:50%;
   overflow:hidden;
+  /* background-color: red; */
   } 
 
   .right-div span{
@@ -488,18 +557,18 @@ export default {
     display: flex;  
     width: 100%;
     overflow: hidden;
+    
   }
 
   .left-div{
-    width: 30%;
-    /* float: left; */
-    margin-left: 15%;
-
-    /* background-color: blue; */
+    /* width: 30%; */
+    /* margin-left: 15%; */
   }
 
   .right-div{
     margin-left: 25%;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 
   
@@ -811,7 +880,7 @@ body {
   position: relative;
 
 }
-/* .contact-me{
+/* .contact-me
   margin-left: auto; 
   margin-right: auto; 
   position: absolute;
