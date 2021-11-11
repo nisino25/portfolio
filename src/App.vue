@@ -506,7 +506,7 @@ export default {
     height: 90%; 
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 450px;
     /* height: 450px; */
       text-align: center;
       margin-left: auto;
