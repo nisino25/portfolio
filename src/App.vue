@@ -19,7 +19,7 @@
 
 
 
-    <div class="notion-navbar w3-white">
+    <div class="notion-navbar w3-white" >
       <a class="notion-link notion-breadcrumb__item single" >
         <span class="notion-navbar__title" style="margin-right: 20px">Nozomu Ando </span>
         <i class="far fa-eye" id="togglePassword" style="margin-right: 7px; cursor: pointer;"></i>
@@ -32,7 +32,7 @@
       
     </div>
 
-    <div class="landing">
+    <div class="landing" >
       <section class="col-lg-6">
         <h3 style="color:#009688">安藤望のポートフォリオへようこそ！</h3>
         <span>
@@ -41,11 +41,11 @@
           高校２年生の時に高校を中退し、アメリカの高校に一年留学。帰国後１年後に再度アメリカのにコミニュティーカレッジの入学後、プログラミングを勉強し始めました。始めて学んだ言語はC++ とPythonで、それからプログラマーの兄の影響を受け、ウェブデザインの方にも興味を持ち始めて、HTML/CSS、Ruby on Railsも勉強し始めました。2020年の春からはVue.jsの勉強を本格的に始め、プログラマーの兄とのマンツーマン、それとUdemyなどを使って勉強をして、いくつかのウェブサイトを作りました。
         </span>
         <br>
-        <!-- <button class="btn-primary">hey</button> -->
+        <!-- <button class="btn-primary">hey </button> -->
         
 
       </section>
-      <div class="green-cover"></div>
+      <div class="green-cover" ></div>
     </div>
 
 
@@ -502,7 +502,7 @@ export default {
   .green-cover{
     position: absolute;
     content: '';
-    width: 1000%;
+    width: 75%;
     height: 100%;
     background-color: #009688;
     -webkit-transform: skewX(20deg);
