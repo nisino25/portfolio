@@ -8,7 +8,8 @@
   </head>
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <div v-if="windowWidth <= '767'">
@@ -20,7 +21,9 @@
 
     <div class="notion-navbar w3-white">
       <a class="notion-link notion-breadcrumb__item single" >
-        <span class="notion-navbar__title">Nozomu Ando</span>
+        <span class="notion-navbar__title" style="margin-right: 20px">Nozomu Ando </span>
+        <i class="far fa-eye" id="togglePassword" style="margin-right: 7px; cursor: pointer;"></i>
+   <vue3-autocounter class="counter" ref='counter' :startAmount='0'  suffix=' Views' :endAmount="userNum" :duration='1.5'  separator=',' :autoinit='true' />
       </a>
 
       <a class="notion-link notion-breadcrumb__item single" style="position:absolute; right:0; marginRight:10px" >
@@ -297,18 +300,18 @@
       <div class="contact-contents" style="text-align: center" >
         <span style="">CONTACT ME</span>
         <section >
-          <a href="https://www.instagram.com/nisino25/?hl=en" target="_blank" class="fa fa-envelope"></a>
+          <a class="fa fa-envelope"></a>
           <span>nisino25@gmail.com</span>
         </section>
 
         <section>
-          <a href="https://www.instagram.com/nisino25/?hl=en" target="_blank" class="fa fa-phone"></a>
+          <a class="fa fa-phone"></a>
           <span>070-8985-6342</span>
         </section>
 
         <section style="text-align:center">
-          <a href="https://www.instagram.com/nisino25/?hl=en" target="_blank" class="fa fa-instagram"></a>
-          <a href="https://github.com/nisino25?tab=repositories" target="_blank" class="fa fa-github" aria-hidden="true"></a>
+          <a href="https://www.instagram.com/nisino25/?hl=en" target="_blank" class="fab fa-instagram"></a>
+          <a href="https://github.com/nisino25?tab=repositories" target="_blank" class="fab fa-github" aria-hidden="true"></a>
 
         </section>
         
@@ -335,6 +338,8 @@
 
 import { EventList } from './const/TimelineList.js'
 // import mockup1 from "/Users/nozomuando/HTML/portfolio/src/assets/mockup1.jpeg"
+import Vue3autocounter from 'vue3-autocounter';
+import db from "./firebase.js"
 
 export default {
   name: 'App',
@@ -348,15 +353,44 @@ export default {
       showingList: 'both',
       noPic: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/450px-No_image_available.svg.png',
 
+      fireData:[],
+      userNum: 0,
+
 
     }
     
+  },
+  components: {
+    'vue3-autocounter': Vue3autocounter
   }, 
   methods:{
     topFunction(){
       window.scrollTo({top: 0, behavior: 'smooth'});
     },
-  }
+  },
+  created(){
+     db.collection("nisino25-portfolio")
+     .get()
+     .then((querySnapshot) => {
+       querySnapshot.forEach((doc) => {
+         console.log(`${doc.id} => ${doc.data().TotalNum}`)
+         this.fireData.push(doc.data().TotalNum)
+         this.userNum = doc.data().TotalNum + 1
+       })
+     })
+  },
+   watch:{
+    userNum(){
+      console.log('just ogt data')
+        const ref = db.collection('nisino25-portfolio')
+        ref.doc('ldQkAzQhLP8BCkDwisfN').update({
+          TotalNum: this.userNum
+          // TotalNum: 200 
+        })
+      console.log('Sent data now')
+    },
+  },
+
   
 }
 </script>
