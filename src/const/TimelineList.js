@@ -31,6 +31,8 @@ EventList.push({year: 2020, month: 8, age: 21, color: 'lightBlue', personal: fal
 EventList.push({year: 2020, month: 9, age: 21, color: '#F6D155', personal: true, description: 'アメリカ人女性と結婚'})
 EventList.push({year: 2021, month: 4, age: 21, color: '#F6D155', personal: true, description: '妻と一緒に日本（京都）に帰国'})
 EventList.push({year: 2021, month: 6, age: 22, color: 'lightBlue', personal: false, description: 'Toeic 895点取得'})
+EventList.push({year: 2021, month: 12, age: 22, color: 'lightBlue', personal: false, description: 'PHPを勉強し始める'})
+EventList.push({year: 2022, month: 1, age: 22, color: 'lightBlue', personal: false, description: 'Laravelを勉強し始める'})
 
 
 
